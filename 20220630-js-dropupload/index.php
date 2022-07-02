@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>php GD</title>
+    <title>JavaScropt Droparea</title>
 
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
@@ -26,6 +26,11 @@
             <p><small>Up to 20 images, No max file size.</small></p>
         </section>
 
-<script src="main.js" defer></script>
+
+        <div style="margin-top:200px; text-align:center;">
+            <button id="testbutton">test</button>
+        </div>
+
+<script src="main2.js" defer></script>
 </body>
 </html>

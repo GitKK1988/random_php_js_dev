@@ -16,6 +16,8 @@ const initApp = () => {
         droparea.addEventListener(evtName, active);
     });
 
+    
+
     ['dragleave', 'drop'].forEach(evtName => {
         droparea.addEventListener(evtName, inactive);
     });
