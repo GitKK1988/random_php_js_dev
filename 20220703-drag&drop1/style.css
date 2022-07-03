@@ -1,0 +1,33 @@
+#flexboxing
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.flexboxdiv
+{
+    width: 200px;
+    height: 200px;
+    border: solid 5px blue;
+    margin-left: 20px;
+    margin-right: 20px;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.boxdragover
+{
+    opacity: 0.5;
+}
+
+#MyDraggableElement
+{
+    width: 100px;
+    height: 100px;
+    margin-top: 45px;
+    background-color: red;
+    margin-left: auto;
+    margin-right: auto;
+}
