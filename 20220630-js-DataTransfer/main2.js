@@ -27,5 +27,9 @@ function handleDrop(e)
     const fileArray = [...files];
     console.log(files); // FileList
     console.log(fileArray);
+
+
+
+
 }
 
