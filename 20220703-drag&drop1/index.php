@@ -14,7 +14,7 @@
         <div class="flexboxdiv">
             <div id="MyDraggableElement" draggable="true"></div>
         </div>
-        <div class="flexboxdiv">
+        <div class="flexboxdiv" id="flexdiv2">
             
         </div>
 
@@ -24,9 +24,20 @@
         let dragelement = document.getElementById('MyDraggableElement');
         dragelement.addEventListener('dragstart', handleDrag);
 
-        let flexboxdiv = document.querySelectorAll('flexboxdiv');
-        flexboxdiv.addEventListener('dragover', handleDragover);
+       //  let flexboxdiv = document.getElementsByClassName('flexboxdiv');
+        let flexdiv2 = document.getElementById('flexdiv2');
+        flexdiv2.addEventListener('dragover', handleDragover);
+        flexdiv2.addEventListener('dragleave', handleDragleave);
+        flexdiv2.addEventListener('drop', handleDrop);
         
+        ['dragover', 'dragleave'].forEach(eventName => {
+            flexdiv2.addEventListener(eventName, testforfun);
+        });
+
+       function testforfun()
+        {
+            console.log('listening works');
+        }
 
         function handleDrag(e)
         {
@@ -41,9 +52,24 @@
 
         function handleDragover(e)
         {
-            flexboxdivdraggedover = document.getElementsByClassName('flexboxdiv');
+            flexboxdivdraggedover = document.getElementById('flexdiv2');
             flexboxdivdraggedover.classList.add('boxdragover');
         }
+
+        function handleDragleave(e)
+        {
+            flexboxdivdraggedover = document.getElementById('flexdiv2');
+            flexboxdivdraggedover.classList.remove('boxdragover');
+        }
+
+        function handleDrop(e)
+        {
+
+            flexboxdivdrop = document.getElementById('flexdiv2');
+            flexboxdivdrop.classList.remove('boxdragover');
+        }
+    
+
     </script>
 
 </body>
