@@ -73,6 +73,22 @@
 
     func(3);
     func(4,5,6);
+
+    let func2 = function(...argMent)
+    {
+        console.log(argMent);
+    }
+
+    func2('test', 'testrest');
+
+    func3('testing1', 'testing2', 'est');
+
+    function func3(argMent2)
+    {
+        console.log(argMent2);
+    }
+
+
 </script>
 
 </body>
