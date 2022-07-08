@@ -9,6 +9,7 @@
 <body>
     
 
+
 <script>
     const str1 = 'this is a string'
     + 'another part';
